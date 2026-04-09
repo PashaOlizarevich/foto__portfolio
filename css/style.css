@@ -1,0 +1,47 @@
+.home {
+    width: 1920px;
+    min-height: 4600;
+}
+
+.homepage {
+    min-width:1920px;
+    height: 760px;
+}
+
+.conteiner {
+    position: relative;
+}
+
+.homepage__text {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    }
+
+.homepage__images {
+    margin: 0 auto; /* Центрируем контейнер */
+    display: flex;
+    justify-content: space-between; /* Распределяет изображения на 50% */
+    max-width: 100%; /* Контейнер занимает 100% доступной ширины */
+    height: 1280px; /* Контейнер занимает 100% доступной высоты */
+}
+
+.homepage__image_left {
+    width: 50%; /* Каждое изображение будет занимать 50% контейнера */
+    height: auto; /* Сохраняет пропорции изображений */
+    object-fit: cover; /* Заполняет контейнер, если изображения не по размеру */
+        max-width: 100%; /* Контейнер занимает 100% доступной ширины */
+    max-height: 100%; /* Контейнер занимает 100% доступной высоты */
+}
+
+.homepage__image_right {
+    width: 50%; /* Каждое изображение будет занимать 50% контейнера */
+    height: auto; /* Сохраняет пропорции изображений */
+    object-fit: cover; /* Заполняет контейнер, если изображения не по размеру */
+    max-width: 100%; /* Контейнер занимает 100% доступной ширины */
+    max-height: 100%; /* Контейнер занимает 100% доступной высоты */
+}
