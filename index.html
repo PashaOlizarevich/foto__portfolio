@@ -1,56 +1,404 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
-    
+    <title>Pasha Sokol | Fashion Photographer</title>
+    <meta
+        name="description"
+        content="Editorial fashion portfolio with cinematic portraits, clean typography, and curated visual storytelling."
+    >
+    <script>
+        document.documentElement.classList.add("js-enabled");
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
-  <!-- Секция общая первая-->
-  <div class="Home">
+    <header class="site-header">
+        <a class="site-header__brand" href="#top">Pasha Sokol</a>
+        <button
+            class="site-header__toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Открыть меню"
+        >
+            <span class="site-header__toggle-line"></span>
+            <span class="site-header__toggle-line"></span>
+            <span class="site-header__toggle-line"></span>
+        </button>
+        <nav class="site-header__nav" id="site-nav" aria-label="Основная навигация">
+            <a href="#about">Обо мне</a>
+            <a href="#portfolio">Портфолио</a>
+            <a href="#offer">Форматы</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
 
-    <div class="homepage">
-      <div class="conteiner">
-        <!-- Логотип -->
-            <img src="https://via.placeholder.com/150" alt="logo" class="homepage__logo">
-
-            <!-- Блок с текстом -->
-            <div class="homepage__text">
-            Pasha Sokol<br>
-            Photographer
+    <main class="page" id="top">
+        <section class="hero section" aria-labelledby="hero-title">
+            <div class="hero__frame hero__frame--dark reveal">
+                <img
+                    src="./img/Home/homepage/1.jpg"
+                    alt="Портрет невесты в мягком студийном свете"
+                    class="hero__image"
+                >
+            </div>
+            <div class="hero__frame reveal reveal--delayed">
+                <img
+                    src="./img/Home/homepage/2.jpg"
+                    alt="Портрет мужчины в костюме в интерьерной съёмке"
+                    class="hero__image hero__image--warm"
+                >
             </div>
 
-            <!-- Контейнер для картинок -->
-            <div class="homepage__images">
-            <img src="/img/Home/homepage/1.jpg" alt="man" class="homepage__image_left">
-            <img src="/img/Home/homepage/2.jpg" alt="girl" class="homepage__image_right">
+            <div class="hero__title-block reveal reveal--slow">
+                <p class="eyebrow">Fashion photographer / cinematic portrait stories</p>
+                <h1 id="hero-title">Pasha Sokol</h1>
+                <p class="hero__lead">
+                    Редакционные съёмки, портреты и визуальные истории с мягкой драматургией,
+                    тактильным светом и спокойной luxury-эстетикой.
+                </p>
             </div>
 
-            <!-- Бургер-меню -->
-            <div class="burger__menu">
-            <div></div>
-            <div></div>
-            <div></div>
+            <aside class="hero__note reveal reveal--float" aria-label="Краткая заметка">
+                <span class="hero__note-label">Selected direction</span>
+                <strong>Editorial / Portrait / Campaign</strong>
+                <p>Мода, персональные истории и кадры, которые выглядят как разворот журнала.</p>
+            </aside>
+        </section>
+
+        <section class="intro section section--dark" id="about" aria-labelledby="about-title">
+            <div class="section-shell intro__layout">
+                <div class="intro__visual reveal">
+                    <img
+                        src="./img/Home/homepage/1.jpg"
+                        alt="Атмосферный портрет в затемнённой студии"
+                        class="intro__image"
+                    >
+                </div>
+
+                <div class="intro__content reveal reveal--delayed">
+                    <p class="eyebrow">About the vision</p>
+                    <h2 id="about-title">AUTHENTIC</h2>
+                    <p class="intro__copy">
+                        В основе каждого кадра лежит не поза ради позы, а настроение. Я собираю
+                        съёмку как небольшую историю: от фактуры ткани и ритма света до тишины
+                        между движениями.
+                    </p>
+
+                    <div class="intro__facts">
+                        <article class="fact-card">
+                            <span class="fact-card__value">01</span>
+                            <p>Редакционная стилизация и композиция, вдохновлённая fashion-съёмками.</p>
+                        </article>
+                        <article class="fact-card">
+                            <span class="fact-card__value">02</span>
+                            <p>Аккуратная работа с цветом: молочные, графитовые и тёплые карамельные тона.</p>
+                        </article>
+                        <article class="fact-card">
+                            <span class="fact-card__value">03</span>
+                            <p>Кадры для личного архива, брендов, лукбуков и intimate portrait stories.</p>
+                        </article>
+                    </div>
+                </div>
             </div>
-      </div>
+        </section>
+
+        <section class="feature-band section" aria-labelledby="feature-title">
+            <div class="section-shell">
+                <div class="feature-band__header reveal">
+                    <p class="eyebrow">Signature approach</p>
+                    <h2 id="feature-title">Эстетика, в которой есть воздух</h2>
+                </div>
+
+                <div class="feature-band__grid">
+                    <article class="feature-card reveal">
+                        <img
+                            src="./img/Home/homepage/2.jpg"
+                            alt="Небольшой портрет для карточки раздела"
+                            class="feature-card__image"
+                        >
+                        <h3>Visual direction</h3>
+                        <p>Съёмка начинается с мудборда и заканчивается готовой драматургией кадра.</p>
+                    </article>
+
+                    <article class="feature-card feature-card--accent reveal reveal--delayed">
+                        <h3>Quiet luxury mood</h3>
+                        <p>
+                            Мягкие тени, благородные оттенки и верстка, которая ощущается как печатная
+                            editorial-полоса.
+                        </p>
+                    </article>
+
+                    <article class="feature-card reveal reveal--slow">
+                        <img
+                            src="./img/Home/homepage/1.jpg"
+                            alt="Портрет невесты для карточки раздела"
+                            class="feature-card__image feature-card__image--soft"
+                        >
+                        <h3>Human detail</h3>
+                        <p>Я оставляю в кадре дыхание, жесты и естественные паузы, а не только идеальную геометрию.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio section section--light" id="portfolio" aria-labelledby="portfolio-title">
+            <div class="section-shell">
+                <div class="portfolio__heading reveal">
+                    <p class="eyebrow">Selected work</p>
+                    <h2 id="portfolio-title">Портфолио</h2>
+                    <p class="portfolio__lead">
+                        Микс крупных editorial-кадров и плотной галереи, собранной как лента визуальных
+                        заметок из одной съёмочной истории.
+                    </p>
+                </div>
+
+                <div class="portfolio__feature reveal">
+                    <div class="portfolio__feature-side">
+                        <span class="portfolio__line"></span>
+                        <p>
+                            Главный кадр задаёт настроение всей серии: тишина, архитектура пространства
+                            и очень точный свет.
+                        </p>
+                    </div>
+                    <div class="portfolio__feature-main">
+                        <button
+                            class="portfolio__feature-button js-lightbox-trigger"
+                            type="button"
+                            data-lightbox-src="./img/Home/homepage/2.jpg"
+                            data-lightbox-alt="Крупный кадр для витрины портфолио"
+                            data-lightbox-caption="Featured shot / quiet architecture / precise light"
+                            aria-label="Открыть крупный кадр"
+                        >
+                            <img
+                                src="./img/Home/homepage/2.jpg"
+                                alt="Крупный кадр для витрины портфолио"
+                                class="portfolio__feature-image"
+                            >
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio__grid">
+                    <figure class="gallery-card reveal">
+                        <button
+                            class="gallery-card__button js-lightbox-trigger"
+                            type="button"
+                            data-lightbox-src="./img/Home/homepage/1.jpg"
+                            data-lightbox-alt="Галерейный кадр 1"
+                            data-lightbox-caption="Soft portrait / studio light"
+                            aria-label="Открыть галерейный кадр 1"
+                        >
+                            <img src="./img/Home/homepage/1.jpg" alt="Галерейный кадр 1">
+                        </button>
+                    </figure>
+                    <figure class="gallery-card gallery-card--warm reveal reveal--delayed">
+                        <button
+                            class="gallery-card__button js-lightbox-trigger"
+                            type="button"
+                            data-lightbox-src="./img/Home/homepage/2.jpg"
+                            data-lightbox-alt="Галерейный кадр 2"
+                            data-lightbox-caption="Warm frame / interior editorial"
+                            aria-label="Открыть галерейный кадр 2"
+                        >
+                            <img src="./img/Home/homepage/2.jpg" alt="Галерейный кадр 2">
+                        </button>
+                    </figure>
+                    <figure class="gallery-card gallery-card--soft reveal reveal--slow">
+                        <button
+                            class="gallery-card__button js-lightbox-trigger"
+                            type="button"
+                            data-lightbox-src="./img/Home/homepage/1.jpg"
+                            data-lightbox-alt="Галерейный кадр 3"
+                            data-lightbox-caption="Soft edit / airy detail"
+                            aria-label="Открыть галерейный кадр 3"
+                        >
+                            <img src="./img/Home/homepage/1.jpg" alt="Галерейный кадр 3">
+                        </button>
+                    </figure>
+                    <figure class="gallery-card gallery-card--square reveal">
+                        <button
+                            class="gallery-card__button js-lightbox-trigger"
+                            type="button"
+                            data-lightbox-src="./img/Home/homepage/2.jpg"
+                            data-lightbox-alt="Галерейный кадр 4"
+                            data-lightbox-caption="Square crop / portrait rhythm"
+                            aria-label="Открыть галерейный кадр 4"
+                        >
+                            <img src="./img/Home/homepage/2.jpg" alt="Галерейный кадр 4">
+                        </button>
+                    </figure>
+                    <figure class="gallery-card gallery-card--mono reveal reveal--delayed">
+                        <button
+                            class="gallery-card__button js-lightbox-trigger"
+                            type="button"
+                            data-lightbox-src="./img/Home/homepage/1.jpg"
+                            data-lightbox-alt="Галерейный кадр 5"
+                            data-lightbox-caption="Monochrome mood / intimate portrait"
+                            aria-label="Открыть галерейный кадр 5"
+                        >
+                            <img src="./img/Home/homepage/1.jpg" alt="Галерейный кадр 5">
+                        </button>
+                    </figure>
+                    <figure class="gallery-card gallery-card--dark reveal reveal--slow">
+                        <button
+                            class="gallery-card__button js-lightbox-trigger"
+                            type="button"
+                            data-lightbox-src="./img/Home/homepage/2.jpg"
+                            data-lightbox-alt="Галерейный кадр 6"
+                            data-lightbox-caption="Dark contrast / tailored silhouette"
+                            aria-label="Открыть галерейный кадр 6"
+                        >
+                            <img src="./img/Home/homepage/2.jpg" alt="Галерейный кадр 6">
+                        </button>
+                    </figure>
+                    <figure class="gallery-card gallery-card--soft reveal">
+                        <button
+                            class="gallery-card__button js-lightbox-trigger"
+                            type="button"
+                            data-lightbox-src="./img/Home/homepage/1.jpg"
+                            data-lightbox-alt="Галерейный кадр 7"
+                            data-lightbox-caption="Textured portrait / soft focus"
+                            aria-label="Открыть галерейный кадр 7"
+                        >
+                            <img src="./img/Home/homepage/1.jpg" alt="Галерейный кадр 7">
+                        </button>
+                    </figure>
+                    <figure class="gallery-card gallery-card--accent reveal reveal--delayed">
+                        <button
+                            class="gallery-card__button js-lightbox-trigger"
+                            type="button"
+                            data-lightbox-src="./img/Home/homepage/2.jpg"
+                            data-lightbox-alt="Галерейный кадр 8"
+                            data-lightbox-caption="Accent crop / brand campaign energy"
+                            aria-label="Открыть галерейный кадр 8"
+                        >
+                            <img src="./img/Home/homepage/2.jpg" alt="Галерейный кадр 8">
+                        </button>
+                    </figure>
+                    <figure class="gallery-card gallery-card--sunset reveal reveal--slow">
+                        <button
+                            class="gallery-card__button js-lightbox-trigger"
+                            type="button"
+                            data-lightbox-src="./img/Home/homepage/1.jpg"
+                            data-lightbox-alt="Галерейный кадр 9"
+                            data-lightbox-caption="Sunset tone / cinematic ending"
+                            aria-label="Открыть галерейный кадр 9"
+                        >
+                            <img src="./img/Home/homepage/1.jpg" alt="Галерейный кадр 9">
+                        </button>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="offer section" id="offer" aria-labelledby="offer-title">
+            <div class="offer__backdrop" aria-hidden="true"></div>
+            <div class="section-shell offer__layout">
+                <div class="offer__intro reveal">
+                    <p class="eyebrow">What I offer</p>
+                    <h2 id="offer-title">Форматы работы</h2>
+                    <p>
+                        Подход из fashion-портфолио я переношу в реальные съёмки: от персональных
+                        портретов до визуалов для бренда, lookbook и кампаний.
+                    </p>
+                </div>
+
+                <div class="offer__cards">
+                    <article class="offer-card reveal">
+                        <h3>Editorial portrait</h3>
+                        <p>
+                            Персональная история с художественным светом, собранной стилизацией и
+                            кадрами, которые ощущаются как авторская серия.
+                        </p>
+                    </article>
+
+                    <article class="offer-card reveal reveal--delayed">
+                        <h3>Brand campaign</h3>
+                        <p>
+                            Съёмка для продукта, капсулы или lookbook: точная сетка кадров, единое
+                            настроение и фокус на визуальной идентичности.
+                        </p>
+                    </article>
+
+                    <article class="offer-card offer-card--muted reveal reveal--slow">
+                        <h3>Story session</h3>
+                        <p>
+                            Неспешный формат для пар, артистов и личных проектов, где главная роль у
+                            атмосферы, деталей и естественной пластики.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section section--contrast" id="contact" aria-labelledby="contact-title">
+            <div class="section-shell contact__layout">
+                <div class="contact__visual reveal">
+                    <img
+                        src="./img/Home/homepage/1.jpg"
+                        alt="Контактный раздел с атмосферным портретом"
+                        class="contact__image"
+                    >
+                </div>
+
+                <div class="contact__panel reveal reveal--delayed">
+                    <p class="eyebrow">Let&apos;s create</p>
+                    <h2 id="contact-title">Съёмка начинается с простого разговора</h2>
+                    <p class="contact__copy">
+                        Если вам близка эта эстетика, соберём проект под задачу: настроение, локацию,
+                        референсы, стилизацию и итоговый ритм серии.
+                    </p>
+
+                    <div class="contact__steps">
+                        <div class="contact-step">
+                            <span>01</span>
+                            <p>Короткий бриф и обсуждение задачи.</p>
+                        </div>
+                        <div class="contact-step">
+                            <span>02</span>
+                            <p>Подбор визуального направления, локации и образов.</p>
+                        </div>
+                        <div class="contact-step">
+                            <span>03</span>
+                            <p>Съёмка и финальная подборка в единой editorial-манере.</p>
+                        </div>
+                    </div>
+
+                    <a class="contact__cta" href="#top">Вернуться к началу</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Pasha Sokol. Editorial portfolio concept inspired by the provided Figma layout.</p>
+    </footer>
+
+    <div class="lightbox" hidden aria-hidden="true">
+        <div class="lightbox__backdrop" data-lightbox-close></div>
+        <div class="lightbox__dialog" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+            <button class="lightbox__close" type="button" data-lightbox-close aria-label="Закрыть просмотр">×</button>
+            <button class="lightbox__nav lightbox__nav--prev" type="button" data-lightbox-prev aria-label="Предыдущий кадр">‹</button>
+            <figure class="lightbox__figure">
+                <img class="lightbox__image" src="" alt="">
+                <figcaption class="lightbox__meta">
+                    <p class="eyebrow" id="lightbox-title">Image preview</p>
+                    <p class="lightbox__caption"></p>
+                </figcaption>
+            </figure>
+            <button class="lightbox__nav lightbox__nav--next" type="button" data-lightbox-next aria-label="Следующий кадр">›</button>
+        </div>
     </div>
 
-    <div class="Style"></div>
-
-    <div class="collections"></div>
-
-    <div class="pasha"></div>
-
-    <div class="your"></div>
-
-    <div class="journey"></div>
-
-    <div class="Homepage__footer"></div>
-
-  </div>
-
+    <script src="./js/main.js" defer></script>
 </body>
 </html>
